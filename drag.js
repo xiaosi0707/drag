@@ -1,7 +1,10 @@
+
 function drag(id){
-	
 	var obj=document.getElementById(id);
-	var obj1=document.getElementsByClassName('');
-	alert('哈哈哈');
-	
+	var disX=0;
+	var disY=0;
+	obj.onmousedown=function(ev){
+		disX=ev.pageX-obj.offsetLeft;
+		disY=ev.pageY.Object.offsetTop;
+	}
 }
